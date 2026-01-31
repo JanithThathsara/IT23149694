@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Singlish to Sinhala Mock</title>
+</head>
+<body>
+  <textarea id="inputBox" placeholder="Type Singlish here"></textarea>
+  <button id="convertBtn">Convert</button>
+  <div id="outputBox"></div>
+
+  <script>
+    document.getElementById('convertBtn').addEventListener('click', () => {
+      const input = document.getElementById('inputBox').value;
+
+
+      let output = '';
+      if(input === 'mama gedara yanawa') output = 'මම ගෙදර යනවා';
+      else if(input === 'please door eka wahanna') output = 'කරුණාකර දොර වහන්න';
+      else output = 'UNKNOWN INPUT';
+
+      document.getElementById('outputBox').innerText = output;
+    });
+  </script>
+</body>
+</html>
